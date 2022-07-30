@@ -1,0 +1,7 @@
+for dir in  $(ls -p | grep -v /)
+do 
+	echo $dir "> is a directory>"
+
+done
+
+

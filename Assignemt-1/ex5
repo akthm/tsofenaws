@@ -1,0 +1,12 @@
+read -p "enter filename : " filename
+max=""
+len=0
+for word in $(<"$filename")
+do 
+	if [ ${#word} -gt $len  ]; then
+		len=${#word}
+		max=$word		
+	fi	
+done
+
+echo The longest word in $filename is $max in length of $len

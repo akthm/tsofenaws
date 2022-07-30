@@ -1,0 +1,7 @@
+count=0
+for file in $(ls -p | grep -v /)
+do 
+count=$(( $count+$(echo $(wc -c $file) | cut -d " " -f 1) ))
+done
+
+echo final count is $count

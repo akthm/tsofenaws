@@ -1,0 +1,20 @@
+dirname="direxample"
+
+if [ -d "$dirname" ]; then 
+	rm -r $dirname 
+	if [ -d "$dirname" ]; then 
+		cd $dirname
+		for file in $(ls -A)
+		do 
+			rm %file 
+		done
+		cd .. 
+		rm -r $dirname
+		if [ -d "$dirname" ]; then 
+			echo file removal failed
+			exit
+		fi 
+	fi
+fi 
+echo "$dirname removed."
+

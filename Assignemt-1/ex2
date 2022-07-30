@@ -1,0 +1,9 @@
+read -p "enter file's name : " name
+
+while [ ! -f "$name" ] 
+do 
+echo "file -> " $name " doesn't exist!" 
+read -p "enter file's name : " name
+done 
+
+
