@@ -1,0 +1,56 @@
+
+
+subs>
+subs>
+subs>newkey my-key
+A new key called my-key was created
+subs>
+subs>save key1
+Enc/Dec keys saved in key1 file
+subs>
+subs>load other
+No such key
+subs>
+subs>load other1
+Key my-other from file other1 loaded
+subs>
+subs>enc text1.txt enc.txt
+File text1.txt was encrypted into enc.txt
+subs>
+subs>dec enc.txt clear.txt
+File enc.txt was decrypted into clear.txt
+subs>
+subs>info
+Current key: my-other
+state: saved in other1
+Encryption:
+  abcdefghijklmnopqrstuvwxyz
+  rzat.....
+Decryption:
+  abcdefghijklmnopqrstuvwxyz
+  c ...            a d     b
+subs>
+subs>newkey key3
+A new key called key3 was created
+subs>info
+Current key: key3
+state: not saved
+Encryption:
+  abcdefghijklmnopqrstuvwxyz
+  rzat.....
+Decryption:
+  abcdefghijklmnopqrstuvwxyz
+  c ...            a d     b
+subs>
+subs>
+subs>done
+osboxes$
+osboxes$
+osboxes$
+
+
+
+
+
+
+
