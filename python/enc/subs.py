@@ -8,6 +8,8 @@ ALPHA = "abcdefghijklmnopqrstuvwxyz"
 
 def set_key(seq):
     global key, inv_key
+    key = {}
+    inv_key = {}
     for k in seq:
         inv_key[seq[k]] = k
     key = seq
